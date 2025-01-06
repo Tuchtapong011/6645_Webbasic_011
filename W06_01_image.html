@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin : 0 auto;  
+        }
+        .b-image-contain {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: contain;
+        }
+        .b-image-fill {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: fill;
+        }
+        b-image-cover {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+        .s-image-contain {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: contain;
+        }
+        .s-image-fill {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: fill;
+        }
+        s-image-cover {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+        .gallery {
+            height: 150px;
+            display: flex;
+            justify-content: space-around; 
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(images/bg_christmas.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Photo</h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLaA1qFV56vISiHLc-oAQsu8RjL37e0JN-AA&s" alt="A placeholder image" width="300">
+  <p>This is an image of my favorite flower.</p>
+    <img src="/images/rabbit3.jpg" alt="rabbit" width="300"> 
+    <p>moooooooo</p>
+  <hr>
+
+  <h1>Click the Image : Link for Open new window</h1>
+  <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">
+    <img src="https://thumbs.dreamstime.com/b/r-214795405.jpg" alt="A clickable image" width="300">
+  </a>
+
+  <hr>
+
+  <h1>Image Alignment</h1>
+  <p class="left"><img src="https://www.drawingtutorials101.com/drawing-tutorials/Video-Games/Plants-vs--Zombies/snow-pea-2/tn_how-to-draw-Snow-Pea-2-from-Plants-vs-Zombies-step-0.png" alt="Left aligned image" class="left">This image is aligned to the left.</p>
+  <p class="right"><img src="https://figurine.bg/storage/products/35472/plants-vs-zombies-plush-figure-sunflower-22-cm-2.jpg" alt="Right aligned image" class="right" width="150">This image is aligned to the right.</p>
+  <p><img src="https://www.models-resource.com/resources/big_icons/52/51368.png?updated=1654372302" alt="Center aligned image" class="center" width="300">This image is centered.</p>
+
+  <hr>
+
+  <h1>Object-Fit: Image Bigger than Container (300x100)</h1>
+  <div>
+    <img src="https://img1.picmix.com/output/stamp/normal/9/7/6/1/2391679_c54c1.gif" alt="Sample Image" class="b-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+    <br>
+  </div>
+  <div>
+    <img src="https://media.tenor.com/9Sm5usHiEOkAAAAM/cat-meme.gif" alt="Sample Image" class="b-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+    <br>
+  </div>
+  <div>
+    <img src="https://i.redd.it/4slwhn4wnod61.gif" alt="Sample Image" class="b-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+    <br>
+  </div>
+
+
+  <hr>
+
+  <h1>Object-Fit: Image Smaller than Container</h1>
+  <div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/077e2bd5-c223-42e5-94c6-15bcad87ac97/dgsbdcb-1a35ac31-e4c5-4cf4-a297-f3e6866611d6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA3N2UyYmQ1LWMyMjMtNDJlNS05NGM2LTE1YmNhZDg3YWM5N1wvZGdzYmRjYi0xYTM1YWMzMS1lNGM1LTRjZjQtYTI5Ny1mM2U2ODY2NjExZDYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aAurBfX0COlLecMQfxyWQUwhzJ-eX9CTE7bRwwjDkr8" alt="Sample Image" class="s-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+  </div>
+
+  <div>
+    <img src="https://www.gifcen.com/wp-content/uploads/2021/03/memes-gif.gif" alt="Sample Image" class="s-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+  </div>
+
+  <div>
+    <img src="https://media0.giphy.com/media/PtZzHZzuSmPCWxS5MJ/200w.gif?cid=6c09b952oe2j5tam827ff5a4c4chyxqphgw7sm0i5l2a7bkb&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Sample Image" class="s-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+  </div>
+
+
+  <hr>
+
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://media.tenor.com/2EFnHq0YxswAAAAM/betterttv-cute.gif" alt="Image 1">
+    <img src="https://media.tenor.com/iiB2xDI-b-wAAAAM/owendigo-animation.gif" alt="Image 2">
+    <img src="https://media1.tenor.com/m/5BYK-WS0__gAAAAd/cool-fun.gif" alt="Image 3">
+    <img src="https://media.tenor.com/FwTWMK2hr3cAAAAM/mandela-catalogue-mandela-catalog.gif" alt="Image 4">
+  </div>
+
+  <hr>
+
+
+  <h1>FlexBox: </h1>
+  <div class="ex-flex">
+    <img src="images/flex.jpg" alt="Image 1">
+    <br>
+  </div>
+
+  <hr>
+  <h1>FlexBox: justify-content</h1>
+  <div class="ex-flex">
+    <img src="images/justify-content.jpg" alt="Image 1">
+    <br>
+  </div>
+  
+  <hr>
+
+
+  <div class="back-to-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>

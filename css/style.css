@@ -1,0 +1,52 @@
+header {
+  background-color: aqua;
+  height: 300px;
+}
+.container {
+  background-color: rgb(93, 153, 37);
+  height: 10px;
+}
+footer {
+  background-color: red;
+  height: 100px;
+}
+nav {
+  background-color: rgb(148, 177, 144);
+  display: flex;
+  justify-content: space-between;
+}
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-name {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 0 0 24px;
+}
+.btn {
+  background-color: brown;
+}
+.btn-primary {
+  background-color: white;
+  color: blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-secondary {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
