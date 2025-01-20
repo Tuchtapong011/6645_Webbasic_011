@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <H1>HTML Form</H1>
+    <H3>input Elemenl</H3>
+    <p>An <span style="color: aqua;">input elemenl</span> can be displayed in many ways, depending on the <span style="color: aqua;">type</span> attritbute.</p>
+    
+    
+    
+    <form action="" method="">
+        <fieldset style="background-color: aqua;">
+            <legend>Text Field</legend>
+            <label for="fName">Frist Name</label>
+            <br>
+            <input type="text" placeholder="กรุณาป้อนชื่อ" required id="fName" name="fName">
+            <br><br>
+            <label for="lName">Last name</label>
+            <br>
+            <input type="text" placeholder="กรุณาป้อนนามสกุล" required id="lName" name="lName">
+            <br><br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" placeholder="กรุณาป้อนอีเมล" required id="email" name="email">
+            <br><br>
+            <label for="number">Age</label>
+            <br>
+            <input type="number" placeholder="กรุณาป้อนอายุ" id="Age" name="" min="0" max="100">
+            <br><br>
+            <label for="number">Age Readonly</label>
+            <br>
+            <input type="number" placeholder="กรุณาป้อนอายุ" id="Age" name="" value="777" readonly>
+            <br><br>
+            <label for="hbd">birthday</label>
+            <br>
+            <input type="date">
+            <br><br>
+            <label for="url">Website</label>
+            <br>
+            <input type="url">
+            <br><br>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </fieldset>
+            
+        <fieldset style="background-color: antiquewhite;">
+            <legend>Login</legend>
+            <form action="">
+            <input type="email" placeholder="Email">
+            <br><br>
+            <input type="password" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Sign in">
+
+            </form>
+        </fieldset>
+
+        <fieldset style="background-color: bisque;">
+            <legend>Redio Button</legend>
+            <form action="">
+                <label>Gender:</label>
+                <input type="radio" value="M" id="male" name="gender">
+                <label for="male">ชาย</label>
+                <input type="radio" value="f" id="female" name="gender">
+                <label for="f">หญิง</label>
+                <br><br>
+                <button type="submit">ยีนยัน</button>
+
+            </form>
+        </fieldset>
+
+        <fieldset style="background-color: aquamarine;">
+            <legend>Checblox</legend>
+            <form action="">
+                <p>เลื่อกภาษาที่ชอบ</p>
+                <input type="checkbox" value="HTML" id="html" name="language1">
+                <label for="">HTML</label>
+                <input type="checkbox" value="CSS" id="CSS" name="language2">
+                <label for="">CSS</label>
+                <input type="checkbox" value="JavaScript" id="JavaScript" name="language3">
+                <label for="">JavaScript</label>
+                <br><br>
+                <button type="submit">OK</button>
+            </form>
+        </fieldset>
+        
+        <fieldset style="background-color: bisque;">
+            <legend>Select Option [Dropdonw list]</legend>
+            <form action="">
+                <label for="province">Province</label>
+                <select name="province" id="province">
+                    <option value="Bankkok">กรุงเทพ</option>
+                    <option value="Nakhon Pathom">นครปฐม</option>
+                    <option value="Egg">ไข่</option>
+                </select>
+                <br><br>
+                <button type="submit">OK</button>
+            </form>
+        </fieldset>
+
+        <fieldset style="background-color: beige;">
+            <legend>Textarea</legend>
+            <form action="">
+                <label for="address">address</label>
+                <br>
+                <textarea name="address" id="address" cols="50" rows="5"></textarea>
+                <br>
+                <input type="submit">
+            </form>
+        </fieldset>
+
+        <fieldset style="background-color: blanchedalmond;">
+            <legend>Upload File</legend>
+            <form action="">
+                <label for="">ไพล์แนบ</label>
+                <input type="file" name="attach">
+                <br><br>
+                <label for="">เลื่อกสีที่ชอบ</label>
+                <input type="color">
+                <br><br>
+                <button type="button" onclick="alert('Hello World')">Clickme!</button>
+                <button type="submit">Submit</button>
+
+            </form>
+        </fieldset>
+        <a href="index.html">Back to Home</a>
+
+    </form>
+</body>
+</html>
