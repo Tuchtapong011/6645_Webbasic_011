@@ -3,113 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Layout</title>
+    <title>table-layout</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f0f8ff;
-        }
-        header {
-            background-color: #4682b4;
-            color: white;
-            padding: 0;
-            text-align: center;
-        }
-        header img {
-            width: 100%;
-            height: 100px;
-            display: block;
+            padding: 0%;
         }
         table {
-            width: 100%;
+            border: 1px solid black;
             border-collapse: collapse;
-            margin: 20px 0;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #5f9ea0;
-            color: white;
-        }
-        td img {
-            width: 100%;
-            height: 100px;
-            display: block;
-        }
-        nav {
-            background-color: #e0ffff;
+        th,td {
             padding: 10px;
         }
-        footer {
-            background-color: #4682b4;
-            color: white;
-            text-align: center;
-            padding: 10px;
+        .Footer-color {
+            background-color: rgb(94, 40, 40);
+            color: blue;
+        }
+        .banner {
+            object-fit: cover;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
+            width: 200px;
+            background-color: aliceblue;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://comicbook.com/wp-content/uploads/sites/4/2023/06/98f944c9-bcd6-47fa-8c88-de560b4a77ae.jpg" alt="Header Image">
-    </header>
-
-    <table>
+    <table width="100%">
         <tr>
-            <td rowspan="2" style="width: 20%; vertical-align: top;">
-                <nav>
-                    <ul style="list-style-type: none; padding: 0;">
-                        <li>Start Game</li>
-                        <li>Save Game</li>
-                        <li>Load Game</li>
-                        <li>Setting Options</li>
-                        <a href="index.html">Back to home
-                    </ul>
-                </nav>
+            <td colspan="1">
+                <img src="images/Npru01.png" alt="Npru header" Class="banner" width="100%">
+                
             </td>
-            <td colspan="3" style="background-color: #f5f5f5;"><img src="https://preview.redd.it/the-russian-roulette-was-arguably-the-best-scene-of-the-v0-sggj9mq2sh9e1.jpeg?auto=webp&s=78b37132ae8f84bb4ff893d55fcd964f0105b905" alt="Photo"></td>
-            <td colspan="3" style="background-color: #f5f5f5;"><img src=https://i.ytimg.com/vi/ieHfodLfpW4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDmKN5JihK5T8A_vsrOlm661A5h4Q></td>
-            <td colspan="3" style="background-color: #f5f5f5;"><img src=https://i.ytimg.com/vi/1d1Y6vmkN_8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBxWcVON0CRBIQZ8TJ2IwSgX_035w</td>
         </tr>
         <tr>
-            <td colspan="3" style="background-color: #f5f5f5;"><img src=https://i.ytimg.com/vi/7UKiFrJdQn4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB-QgpqgMIrue1wzhkVC_QyhCAkgg</td>
-            <td colspan="3" style="background-color: #f5f5f5;"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-bBkeURPycFaxk5JZXuEdQUjOhcsF3YEvDiXZmBv2gZ-IYlhWaSM1BjdrfXeQcBS6Os&usqp=CAU</td>
-            <td colspan="3" style="background-color: #f5f5f5;"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-wO7vzEWlfb_udHzaIb51qP09Mo9F1qWJN51lSa0RmnpY6Ki9Zj5xT9pTHxdWHgzj6k&usqp=CAU</td>
+            <td rowspan="2" width="100%">
+                <ul>
+                    <li><a href="#">เกี่ยวกับมหาวิทยาลัย</a></li>
+                    <li><a href="#">ข่าว</a></li>
+                    <li><a href="#">หน่วยงาน</a></li>
+                    <li><a href="#">ระบบสารสนเทศ</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">การจัดอันดับมหาวิทยาลัย</a></li>
+                    <li><a href="#">ติดต่อ</a></li>
+                    <li><a href="#">Inernet Login</a></li>
+                    <li><a href="index.html">Back to home</a></li>
+                </ul>
+                <td colspan="2"><img src="images/Npru02.png" alt="Npru main" width="100%"></td>
+            </td>
+            <tr>
+                <td colspan="2"><img src="images/Npru02.png" alt="Npru main" width="100%"></td>
+            </tr>
+                <table>
+                    <img src="images/Npru02.png" alt="Npru main" width="100%">
+ 
+
+                    <tr>
+                        <td>มรน. จัดประชุม Morning Talk ครั้งที่ 1/2568</td>
+                        <td>มรน. ประชุมสภามหาวิทยาลัยฯ ครั้งที่ 1/2568</td>
+                    </tr>
+                    
+                </table>
+                
+            </td>
         </tr>
-        <tr>
-            <td colspan="10" style="text-align: center; padding: 20px;">
-                Dunggulge Dunggulge Jjak
-Binggeulbinggeul Doragamyeo
-Chum-Eul Chupsida
-
-Sonppyeogeul Chimyeonseo Jjak
-Noraereul Bureumyeo Jjak
-Rallallalla Jeulgeoupge Chumchuja
-
-Ring Ring Ring Ring Ring And Ring
-Ringa Ringa Ringa Ringa Ringa Ring
-Sone Soneul Japgo
-Modu Da Hamkke
-Jeulgeoupge Ttwieo Bopsida
-
-Dunggulge Dunggulge Jjak
-Binggeulbinggeul Doragamyeo
-Chum-Eul Chupsida
-
-Sonppyeogeul Chimyeonseo Jjak
-Noraereul Bureumyeo Jjak
-Rallallalla Jeulgeoupge Chumchuja
+        <tr class="Footer-color">
+            <td colspan="1">
+                <p style="text-align: center;">มหาวิทยาลัยราชภัฏนครปฐม</p>
+                <p style="text-align: center;">Nakhon Pathom Rajabhat University</p>
+                <p style="text-align: center;">85 ถนนมาลัยแมน ต.นครปฐม อ.เมือง จ.นครปฐม 73000</p>
             </td>
         </tr>
     </table>
-
-    <footer>
-        <pre>นายธัชฑพงษ์ ภัทรวงศาโรจน์</pre><pre>664230011 66/45</pre><pre>เทคโนโลยีสารสนเทศ วิทยาศาสตร์และเทคโนโลยี</pre> มหาวิทยาลัยราชภัฏนครปฐม
-    </footer>
 </body>
 </html>
