@@ -28,8 +28,36 @@
                 <button class="btn">Sign up</button>
                 <button class="btn-login">login</button>
             </div>
+
+            <!-- Hamburger Menu -->
+            <div class="Hamburger-icon" onclick="openMenu()">&#9776</div>
         </div>
     </header>
+
+    <!-- Full-Screen Menu -->
+    <div class="full-screen-menu" id="fullScreenMenu">
+        <div class="close-btn" onclick="closeMenu()">✖</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="W12_01_login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function openMenu() {
+            document.getElementById("fullScreenMenu").style.display = "block";
+        }
+       
+        function closeMenu() {
+            document.getElementById("fullScreenMenu").style.display = "none";
+        }
+       
+    </script>
 
     <div class="container">
         <section class="hero">
