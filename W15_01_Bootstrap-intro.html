@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrtrap</title>
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .container {
+            //background-color: aqua;
+            //text-align: center;
+            padding: 20px;
+            
+            //color: blue;
+
+            ul {
+                text-align: left;
+            }
+        }
+        .container-fluid {
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: blue;
+
+            ul {
+                text-align: left;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1>Bootstrap Intro</h1>
+    <hr>
+    <h2>เปรียนเทียบ .Containers กับ .container-fluid</h2>
+
+<!-- ..container -->
+    <div class="container">
+        <h1>container</h1>
+        <p>กำหนดค่า property เพื่มเติมในการจัดการ style โดยไม่ใช้ class จาก bootstrap</p>
+        <ul>
+            <li>background-color</li>
+            <li>text-align</li>
+            <li>padding</li>
+            <li>margin</li>
+            <li>color</li>
+        </ul>
+    </div>
+
+<!-- .container-fluid -->    
+    <div class="container-fluid">
+        <h1>container-fluid</h1>
+        <p>กำหนดค่า property เพื่มเติมในการจัดการ style โดยไม่ใช้ class จาก bootstrap</p>
+        <ul>
+            <li>background-color</li>
+            <li>text-align</li>
+            <li>padding</li>
+            <li>margin</li>
+            <li>color</li>
+        </ul>
+    </div>
+
+<!-- Bootstrap -->
+    <h1>ใช้คำสั่งจาก Bootstrap</h1>
+    <div class="container bg-dark text-info text-center">
+        <h1>container</h1>
+        <p>กำหนดค่า property เพื่มเติมในการจัดการ style โดยไม่ใช้ class จาก bootstrap</p>
+        <ul>
+            <li>background-color</li>
+            <li>text-align</li>
+            <li>padding</li>
+            <li>margin</li>
+            <li>color</li>
+        </ul>
+    </div>
+
+<hr>
+
+<div class="Grid basic bg-dark text-white text-center p-2 mt-5"> <br>
+    <h1>Grid basic</h1>
+    <p>แบ่งคอลัมน์</p>
+    <div class="row">
+        <div class="col-3 bg-danger">a</div>
+        <div class="col-3 bg-warning">b</div>
+        <div class="col-3 bg-black">c</div>
+        <div class="col-3 bg-success">d</div>
+    </div>
+</div>
+
+
+<!-- Grid & Card & button -->
+<div class="Grid basic bg-danger text-white text-center p-2 mt-5"> <br>
+    <h1>Card & button</h1>
+    <p>แบ่งคอลัมน์</p>
+</div>
+
+
+
+
+
+<!-- container -->
+    <div class="container bg-warning mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">                
+                <div class="card">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">                
+                <div class="card">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+<!-- 3 column with card & button -->
+<div class="row mt-4 text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">                
+                <div class="card">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-outline-success">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">                
+                <div class="card">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary btn-block">Nevada 1</button>
+                        </div>
+                        <div class="d-grid mt-2">
+                            <button type="button" class="btn btn-outline-primary btn-block">Nevada 2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQt7xokVutELlNQi6ASVV_bdxqTrO0UtSVQ&s" alt="Card image">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">                
+                <div class="card">
+                    <img class="card-img-top" src="images/rabbit3.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-outline-success">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">                
+                <div class="card">
+                    <img class="card-img-top" src="https://i.pinimg.com/736x/02/93/9b/02939bd4e81444483b969a8145204d7d.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h3>column 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary btn-block">Nevada 1</button>
+                        </div>
+                        <div class="d-grid mt-2">
+                            <button type="button" class="btn btn-outline-primary btn-block">Nevada 2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-block"><a href="index.html" style="color: azure;">Back to home</a></button>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
